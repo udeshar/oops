@@ -1,0 +1,11 @@
+public class MainApp {
+	public static void main(String[] args) {
+		Student s1 = new Student();
+		
+		s1.name = "Udesh Arlekar";
+		System.out.println(s1.name);
+		
+//		Addition
+		System.out.println(s1.addition(5, 5));
+	}
+}

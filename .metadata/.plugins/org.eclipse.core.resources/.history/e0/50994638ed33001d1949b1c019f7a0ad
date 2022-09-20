@@ -1,0 +1,9 @@
+
+public class Student {
+	String name;
+	Integer rollNo;
+	
+	int addition(int x, int y) {
+		return x+y;
+	}
+}

@@ -1,0 +1,16 @@
+package palindrome;
+
+public class palindrome {
+	public static void main(String[] args) {
+		System.out.println("Enter the value to check for palindrome");
+		int num = 131;
+		int a,n,sum = 0;
+		n = num;
+		while(n > 0) {
+			a = n % 10;
+			sum = sum + a;
+			n = n / 10;
+		}
+		System.out.println(sum);
+	}
+}

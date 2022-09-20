@@ -1,0 +1,20 @@
+
+public class Student {
+	String name;
+	Integer rollNo;
+	
+	int addition(int x, int y) {
+		return x+y;
+	}
+	
+	String checkIfEven(int x) {
+		if(x % 2 == 0) {
+			return "Even";
+		}
+		else {
+			return "Odd";
+		}
+	}
+	
+	
+}

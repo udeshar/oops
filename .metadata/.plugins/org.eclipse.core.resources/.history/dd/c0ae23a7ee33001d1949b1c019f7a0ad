@@ -1,0 +1,32 @@
+
+public class Student {
+	String name;
+	Integer rollNo;
+	
+	Student(String name, int rollNo){
+		this.name = name;
+		this.rollNo = rollNo;
+	}
+	
+	int addition(int x, int y) {
+		return x+y;
+	}
+	
+	String checkIfEven(int x) {
+		if(x % 2 == 0) {
+			return "Even";
+		}
+		else {
+			return "Odd";
+		}
+	}
+	
+	String getName() {
+		return name;
+	}
+	
+	int getRollno() {
+		return rollNo;
+	}
+	
+}
