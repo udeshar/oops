@@ -1,7 +1,0 @@
-package palindrome;
-
-public class palindrome {
-	public void main() {
-		System.out.println("Hello");
-	}
-}
