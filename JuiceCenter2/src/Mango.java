@@ -2,12 +2,11 @@
 public class Mango extends MilkShake {
 	
 	Integer quantity;
-	private Integer price = 20;
+	private Integer price = 40;
 	
 	public Mango(Integer quantity) {
-		super(20);
 		this.quantity = quantity;
-		System.out.println("\npreparing Mango shake...");
+		System.out.println("\npreparing Mango shake...\n");
 	}
 
 	public Integer getPrice() {

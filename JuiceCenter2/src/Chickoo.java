@@ -4,9 +4,8 @@ public class Chickoo extends MilkShake {
 	private Integer price = 40;
 	
 	public Chickoo(Integer quantity) {
-		super(40);
 		this.quantity = quantity;
-		System.out.println("\npreparing Chickoo shake...");
+		System.out.println("\npreparing Chickoo shake...\n");
 	}
 
 	public Integer getPrice() {

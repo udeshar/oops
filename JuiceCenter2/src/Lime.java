@@ -1,12 +1,11 @@
 
 public class Lime extends FruitJuice {
 	Integer quantity;
-	private Integer price = 30;
+	private Integer price = 40;
 	
 	public Lime(Integer quantity) {
-		super(30);
 		this.quantity = quantity;
-		System.out.println("\nPreparing Lime shake...");
+		System.out.println("\nPreparing Lime shake...\n");
 	}
 
 	public Integer getPrice() {

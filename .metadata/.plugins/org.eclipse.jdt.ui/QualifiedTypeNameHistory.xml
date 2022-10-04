@@ -4,4 +4,5 @@
     <fullyQualifiedTypeName name="Prime"/>
     <fullyQualifiedTypeName name="Modals.Player"/>
     <fullyQualifiedTypeName name="Interfaces.Position"/>
+    <fullyQualifiedTypeName name="utils"/>
 </qualifiedTypeNameHistroy>

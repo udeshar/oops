@@ -4,9 +4,8 @@ public class Banana extends MilkShake{
 	private Integer price = 50;
 	
 	public Banana(Integer quantity) {
-		super(50);
 		this.quantity = quantity;
-		System.out.println("\npreparing Banana shake...");
+		System.out.println("\npreparing Banana shake...\n");
 	}
 
 	public Integer getPrice() {

@@ -1,12 +1,11 @@
 
 public class Pineapple extends FruitJuice {
 	Integer quantity;
-	private Integer price = 70;
+	private Integer price = 40;
 	
 	public Pineapple(Integer quantity) {
-		super(70);
 		this.quantity = quantity;
-		System.out.println("\nPreparing Pineapple shake...");
+		System.out.println("\nPreparing Pineapple shake...\n");
 	}
 
 	public Integer getPrice() {
