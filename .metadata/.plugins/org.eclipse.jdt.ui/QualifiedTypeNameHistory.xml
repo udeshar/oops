@@ -5,4 +5,6 @@
     <fullyQualifiedTypeName name="Modals.Player"/>
     <fullyQualifiedTypeName name="Interfaces.Position"/>
     <fullyQualifiedTypeName name="utils"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
