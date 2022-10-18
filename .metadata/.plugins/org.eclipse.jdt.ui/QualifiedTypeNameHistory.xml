@@ -7,4 +7,7 @@
     <fullyQualifiedTypeName name="utils"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="src.MobilePhones"/>
+    <fullyQualifiedTypeName name="src.SmartEnabledPhone"/>
+    <fullyQualifiedTypeName name="src.FeaturePhone"/>
 </qualifiedTypeNameHistroy>
