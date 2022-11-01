@@ -10,7 +10,7 @@ public class LinkedListImpl {
 		}
 		else {
 			temp = new Node(data);
-			temp.next = head;
+			temp.setNext(head);
 			head=temp;
 		}
 	}
@@ -21,22 +21,22 @@ public class LinkedListImpl {
 		if(temp2 == null) {
 			head = temp;
 		} else {
-			while(temp2.next != null) {
-				temp2 = temp2.next;
+			while(temp2.getNext() != null) {
+				temp2 = temp2.getNext();
 			}
-			temp2.next = temp;
+			temp2.setNext(temp);
 		}
 	}
 	
 	public Integer deleteAtEnd() {
 		if(head != null) {
 			Node temp2 = head;
-			while(temp2.next != null) {
+			while(temp2.getNext() != null) {
 				temp = temp2;
-				temp2 = temp2.next;
+				temp2 = temp2.getNext();
 			}
-			temp.next = null;
-			return temp2.data;
+			temp.setNext(null);
+			return temp2.getData();
 		}
 		else {
 			System.out.println("Linked list is empty");
@@ -50,8 +50,8 @@ public class LinkedListImpl {
 			System.out.println("list is empty");
 		} else {
 			while(temp2 != null) {
-				System.out.println(temp2.data);
-				temp2 = temp2.next;
+				System.out.println(temp2.getData());
+				temp2 = temp2.getNext();
 			}
 		}
 	}
@@ -59,8 +59,8 @@ public class LinkedListImpl {
 	public Integer deleteAtBegining() {
 		if(head != null) {
 			Node temp2 = head;
-			head = temp2.next;
-			return temp2.data;
+			head = temp2.getNext();
+			return temp2.getData();
 		}
 		else {
 			System.out.println("Linked list is empty");
@@ -73,7 +73,7 @@ public class LinkedListImpl {
 			System.out.println("Empty");
 			return null;
 		} else {
-			return head.data;
+			return head.getData();
 		}
 	}
 	
@@ -83,10 +83,10 @@ public class LinkedListImpl {
 			return null;
 		} else {
 			Node temp2 = head;
-			while(temp2.next != null) {
-				temp2=temp2.next;
+			while(temp2.getNext() != null) {
+				temp2=temp2.getNext();
 			}
-			return temp2.data;
+			return temp2.getData();
 		}
 	}
 }

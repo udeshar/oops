@@ -1,12 +1,28 @@
 package linkedList;
 
 public class Node {
-	public Integer data;
-	public Node next;
+	private Integer data;
+	private Node next;
 	
 	public Node(Integer data){
 		super();
+		this.setData(data);
+		this.setNext(null);
+	}
+
+	public Integer getData() {
+		return data;
+	}
+
+	public void setData(Integer data) {
 		this.data = data;
-		this.next = null;
+	}
+
+	public Node getNext() {
+		return next;
+	}
+
+	public void setNext(Node next) {
+		this.next = next;
 	}
 }
