@@ -30,7 +30,7 @@ public class clientApp {
 		System.out.println("\nList of all mobiles");
 		List<Mobile> listOfMobile = mobileDb.getAllMobileList();
 		for(Integer i = 0; i < listOfMobile.size(); i++) {
-			System.out.println(i+1 + " - " + listOfMobile.get(i).getBrandName());
+			System.out.println(i+1 + " - " + listOfMobile.get(i).getBrandName()+ " " + listOfMobile.get(i).getPrice());
 		}
 		
 		//Display by modal name
@@ -39,11 +39,12 @@ public class clientApp {
 		System.out.println(mobileByModalname.get("iPhone XE").getModalName());
 		
 		//Display mobile by price	
-		System.out.println("\nGet mobile by price");
-		List<Map<String,Mobile>> listByPrice = mobileDb.getMobileByPrice(true, 10000);
+		System.out.println("\nGet mobile by price greater then 10000");
+		Map<String,List<Mobile>> listByPrice = mobileDb.getMobileByPrice(true, 40000);
 		for(Integer i = 0; i < listByPrice.size(); i++) {
 			System.out.println(i+1 + " - " + listOfMobile.get(i).getBrandName());
 		}
+		
 	}
 
 }

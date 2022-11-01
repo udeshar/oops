@@ -5,9 +5,14 @@
     <fullyQualifiedTypeName name="Modals.Player"/>
     <fullyQualifiedTypeName name="Interfaces.Position"/>
     <fullyQualifiedTypeName name="utils"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="src.MobilePhones"/>
     <fullyQualifiedTypeName name="src.SmartEnabledPhone"/>
     <fullyQualifiedTypeName name="src.FeaturePhone"/>
+    <fullyQualifiedTypeName name="main.MobileIS"/>
+    <fullyQualifiedTypeName name="main.Mobile"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
 </qualifiedTypeNameHistroy>

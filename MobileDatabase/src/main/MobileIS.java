@@ -29,21 +29,19 @@ public class MobileIS {
 		return mobByModal;
 	}
 	
-	public List<Map<String, Mobile>> getMobileByPrice(Boolean isGreaterThen, Integer price){
-		List<Map<String, Mobile>> mByPrice = null;
+	public Map<String, List<Mobile>> getMobileByPrice(Boolean isGreaterThen, Integer price){
+		Map<String, List<Mobile>> mByPrice = new HashMap<String, List<Mobile>>();
+		List<Mobile> lsMb = new ArrayList<>();
 		for(Integer i=0; i<allMobileList.size(); i++) {
-			Map<String,Mobile> priceMap = null; 
 			if(isGreaterThen && allMobileList.get(i).getPrice() > price) {
-				priceMap.put(allMobileList.get(i).getModalName(), allMobileList.get(i));
-				mByPrice.add(priceMap);
+				lsMb.add(allMobileList.get(i));
 			}
 			if(!isGreaterThen && allMobileList.get(i).getPrice() < price) {
-				priceMap.put(allMobileList.get(i).getModalName(), allMobileList.get(i));
-				mByPrice.add(priceMap);
+				lsMb.add(allMobileList.get(i));
 			}
 		}
-		if(mByPrice != null) return mByPrice;
-		else return mByPrice;
+		mByPrice.put("priceFilter", lsMb);
+		return mByPrice;
 	}
 	
 }
