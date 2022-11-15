@@ -15,4 +15,7 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="linkedList.LinkedListImpl"/>
+    <fullyQualifiedTypeName name="Stack.StackImpl"/>
+    <fullyQualifiedTypeName name="linkedList.Node"/>
 </qualifiedTypeNameHistroy>
