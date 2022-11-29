@@ -13,6 +13,7 @@ public class DbConnection {
 	    Connection connection;
 	    try {
 	        connection = DriverManager.getConnection(dbPrefix + location);
+	        System.out.println("Connected to database");
 	    } catch (SQLException exception) {
 	    	Logger.getAnonymousLogger().log(Level.SEVERE,
 	                LocalDateTime.now() + ": Could not connect to SQLite DB at " +
