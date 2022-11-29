@@ -6,8 +6,9 @@ mi, 9
 iqoo, 17
 oppo, f15
 vivo, v15
-infinix, note 12
+infinix, note12
 micromax, m10
 poco, x3
 honor, x41
-google, pixel 3
+google, pixel3
+samsung, f12

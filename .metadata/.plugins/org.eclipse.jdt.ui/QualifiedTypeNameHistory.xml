@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="Prime"/>
     <fullyQualifiedTypeName name="Modals.Player"/>
     <fullyQualifiedTypeName name="Interfaces.Position"/>
@@ -10,12 +9,17 @@
     <fullyQualifiedTypeName name="src.FeaturePhone"/>
     <fullyQualifiedTypeName name="main.MobileIS"/>
     <fullyQualifiedTypeName name="main.Mobile"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="linkedList.LinkedListImpl"/>
     <fullyQualifiedTypeName name="Stack.StackImpl"/>
     <fullyQualifiedTypeName name="linkedList.Node"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="mobiles.LoadMobiles"/>
+    <fullyQualifiedTypeName name="java.io.PrintStream"/>
+    <fullyQualifiedTypeName name="mobiles.Mobile"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

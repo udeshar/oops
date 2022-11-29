@@ -1,26 +1,31 @@
+import java.util.ArrayList;
 import java.util.List;
 
 import mobiles.Mobile;
-import mobiles.MobilesData;
+import mobiles.WriteData;
+import mobiles.LoadData;
 
 public class ClientApp {
 	public static void main(String[] args) {
-		MobilesData loadMobiles = new MobilesData();
+		List<Mobile> mobileList = new ArrayList<>();
+		
+		LoadData loaddata = new LoadData();
+		WriteData writeData = new WriteData();
 		
 //		Take input from file
-		loadMobiles.loadMobiles("input.txt");
+		mobileList.addAll(loaddata.loadMobiles("input.txt"));
 		
 //		generate output to file
-		loadMobiles.createOutputFile("outputfile.txt");
+		writeData.createOutputFile("outputfile.txt", mobileList);
 		
 //		get mobile list
-		displayMobile(loadMobiles.getMobiles());
+		displayMobile(mobileList);
 		
 	}
 	
 	static void displayMobile(List<Mobile> mobiles) {
 		for(Mobile m : mobiles) {
-			System.out.println(m.getModel() + " - " + m.getBrandName());
+			System.out.println(m.getModel() + " , " + m.getBrandName());
 		}
 	}
 }
