@@ -1,0 +1,2 @@
+Samsung,a12,Samsung,10000
+Iphone,14, Iphone, 2000

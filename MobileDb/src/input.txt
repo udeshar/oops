@@ -1,0 +1,14 @@
+Samsung,a12
+Iphone,14
+Redmi,note10
+one plus, 9t
+mi, 9
+iqoo, 17
+oppo, f15
+vivo, v15
+infinix, note12
+micromax, m10
+poco, x3
+honor, x41
+google, pixel3
+samsung, f12
