@@ -1,6 +1,9 @@
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,14 +14,14 @@ import mobiles.LoadData;
 
 public class ClientApp {
 	
+	public static Connection conn = DbConnection.connect("C:\\Users\\udesh\\Desktop\\myWorkspace\\oops\\MobileDb\\mobiledb.sqlite");
+	
 	public static void insert() {  
-        String sql = "INSERT INTO indexsqlite_autoindex_laptop_1laptop(id, brand, price) VALUES(?,?,?)";  
+        String sql = "INSERT INTO mobiles(id, brand, price) VALUES(?,?,?)";  
    
         try{  
-//            Connection conn = this.connect();  
-        	Connection conn = DbConnection.connect("C:\\Users\\udesh\\Desktop\\myWorkspace\\oops\\MobileDb\\mobiledb.sqlite");
             PreparedStatement pstmt = conn.prepareStatement(sql);  
-            pstmt.setInt(1, 1);  
+            pstmt.setInt(1, 12);  
             pstmt.setString(2, "dgcvd"); 
             pstmt.setInt(3, 100000);
             pstmt.executeUpdate();  
@@ -26,13 +29,44 @@ public class ClientApp {
             System.out.println(e.getMessage());  
         }  
     } 
+	
+	public static void create() {
+		  String sql = "CREATE TABLE IF NOT EXISTS mobiles (\n"  
+	                + " id integer PRIMARY KEY,\n"  
+	                + " brand text NOT NULL,\n"  
+	                + " price integer\n"  
+	                + ");";
+		  try{   
+	            Statement stmt = conn.createStatement();  
+	            stmt.execute(sql);  
+	        } catch (SQLException e) {  
+	            System.out.println(e.getMessage());  
+	        }  
+	}
+	
+	public static void selectAll(){  
+        String sql = "SELECT * FROM mobiles";  
+          
+        try {   
+            Statement stmt  = conn.createStatement();  
+            ResultSet rs    = stmt.executeQuery(sql);  
+              
+            // loop through the result set  
+            while (rs.next()) {  
+                System.out.println(rs.getInt("id") +  "\t" +   
+                                   rs.getString("brand") + "\t" +  
+                                   rs.getString("price"));  
+            }  
+        } catch (SQLException e) {  
+            System.out.println(e.getMessage());  
+        }  
+    }  
 	   
 	public static void main(String[] args) {
 		
-//		Connection conn = DbConnection.connect("C:\\Users\\udesh\\Desktop\\myWorkspace\\oops\\MobileDb\\mobiledb.sqlite");
-		
-//		insert();
+		create();
 		insert();
+		selectAll();
 		
 		List<Mobile> mobileList = new ArrayList<>();
 		
